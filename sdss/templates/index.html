@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDSS Galaxy Classification</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container" >
+        <h1>Galaxy Classifier</h1>
+
+        <form action="/predict" method="POST">
+            <table>
+                <tr>
+                    <td><label for="specobjid">Spectral Object ID:</label></td>
+                    <td><input type="text" name="specobjid" required></td>
+                </tr>
+                <tr>
+                    <td><label for="g">Green Band Magnitude:</label></td>
+                    <td><input type="text" name="g" required></td>
+                </tr>
+                <tr>
+                    <td><label for="r">Red Band Magnitude:</label></td>
+                    <td><input type="text" name="r" required></td>
+                </tr>
+                <tr>
+                    <td><label for="modelFlux_i">Model Flux (Infrared):</label></td>
+                    <td><input type="text" name="modelFlux_i" required></td>
+                </tr>
+                <tr>
+                    <td><label for="modelFlux_z">Model Flux (Z Band):</label></td>
+                    <td><input type="text" name="modelFlux_z" required></td>
+                </tr>
+                <tr>
+                    <td><label for="petroRad_g">Petrosian Radius (Green Band):</label></td>
+                    <td><input type="text" name="petroRad_g" required></td>
+                </tr>
+                <tr>
+                    <td><label for="petroRad_r">Petrosian Radius (Red Band):</label></td>
+                    <td><input type="text" name="petroRad_r" required></td>
+                </tr>
+                <tr>
+                    <td><label for="petroFlux_i">Petrosian Flux (Infrared):</label></td>
+                    <td><input type="text" name="petroFlux_i" required></td>
+                </tr>
+                <tr>
+                    <td><label for="petroFlux_z">Petrosian Flux (Z Band):</label></td>
+                    <td><input type="text" name="petroFlux_z" required></td>
+                </tr>
+                <tr>
+                    <td><label for="psfMag_u">Point Spread Function Magnitude (Ultraviolet):</label></td>
+                    <td><input type="text" name="psfMag_u" required></td>
+                </tr>
+            </table>
+            <div class="centered">
+                <button type="submit">Classify</button>
+            </div>
+        </form>   
+       
+    </div>
+</body>
+</html>
