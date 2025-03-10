@@ -53,8 +53,6 @@ Pandas, NumPy (Data Processing)
 Jupyter Notebook (Model Training)
 HTML, CSS (Frontend for Web UI)
 
-#Note
-(The size of random_forest_model.pkl is about 152 MB that's why I was not able to included it in Github repository code.)
 ## Authors
 This project was created by:
 
